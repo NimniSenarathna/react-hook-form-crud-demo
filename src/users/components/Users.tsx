@@ -1,3 +1,6 @@
+import { useState } from "react";
+
 export function Users() {
-    return <div>users</div>;
+    const [input, setInput] = useState("");
+    return <input value={input} onChange={(e) => setInput(e.target.value)}/>;
 }
